@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { FormControl, Nav, Navbar, Container, Form, Button } from 'react-bootstrap';
 import logo from './logo192.png'
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import {BrowserRouter,Switch,Route} from 'react-router-dom';
 
 import Home from '../Pages/Home';
 import About from '../Pages/About';
@@ -43,14 +43,12 @@ export default class Header extends Component {
                     </Container>
                 </Navbar>
 
-                <Router>
-                    <Switch>
-                        <Route exact path="/" Component={Home} />
-                        <Route exact path="/about" Component={About} />
-                        <Route exact path="/contacts" Component={Contacts} />
-                        <Route exact path="/blog" Component={Blog} />
-                    </Switch>
-                </Router>
+                <BrowserRouter>
+                        <Route  path="/" component={Home} exact />
+                        <Route  path="/about" component={About} exact />
+                        <Route  path="/contacts" component={Contacts} exact />
+                        <Route  path="/blog" component={Blog} exact />
+                </BrowserRouter>
             </>
         )
     }
