@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import forestImg from '../Assets/bg1.jpg';
-import bforestImg from '../Assets/bg2.jpg';
-import aforestImg from '../Assets/bg3.jpg';
+import forestImg from '../Assets/1.jpg';
+import bforestImg from '../Assets/2.jpg';
+import aforestImg from '../Assets/3.jpg';
 
 export default class CarouselBox extends Component {
     render() {
